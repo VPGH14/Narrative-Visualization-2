@@ -1,6 +1,6 @@
 <html>
 
-<h1>Electric cars are cool! EDIT 2 </h1>
+<h1>Electric cars are cool! EDIT 3 </h1>
         
 <p> In this analysis, we are going to do a little deep dive just to look at the electric cars in the mix.</p>
 
@@ -44,7 +44,7 @@ const data = await d3.csv(
       .data(data)
       .enter()
       .append('circle')
-         .filter(function(d) { return d["AverageCityMPG] > 75 })
+         .filter(function(d) { return d["AverageCityMPG"] > 75 })
          .attr("cx", function(d,i) { return scaleL(d["AverageCityMPG"]); })
          .attr("cy", function(d,i) { return 600 -
                                          scaleL(d["AverageHighwayMPG"]);})
